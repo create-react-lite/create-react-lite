@@ -3,9 +3,7 @@
   "version": "1.0.5",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "create-react-lite": "create-react-lite.js"
-  },
+  "bin": "./bin/create-react-lite.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },

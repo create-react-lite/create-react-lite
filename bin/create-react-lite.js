@@ -6,7 +6,7 @@ const templates = {
 };
 
 const main = async () => {
-  console.log(`${chalk.bgMagenta(chalk.cyanBright("  CREATE REACT LITE  "))}`);
+  console.log(`${chalk.bgMagenta("CREATE REACT LITE")}`);
 
   // const args = require("yargs").argv;
   // const projectLocation = args._[0];
