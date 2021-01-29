@@ -1,0 +1,22 @@
+{
+  "name": "create-react-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "create-react-lite": "create-react-lite.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kocgo/react-ts-boilerplate.git"
+  },
+  "author": "Gokhan KOC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kocgo/react-ts-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kocgo/react-ts-boilerplate#readme"
+}
