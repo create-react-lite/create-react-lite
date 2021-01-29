@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kocgo/react-ts-boilerplate.git"
+    "url": "git+https://github.com/create-react-lite/create-react-lite.git"
   },
   "author": "Gokhan KOC",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kocgo/react-ts-boilerplate/issues"
+    "url": "https://github.com/create-react-lite/create-react-lite/issues"
   },
-  "homepage": "https://github.com/kocgo/react-ts-boilerplate#readme"
+  "homepage": "https://github.com/create-react-lite/create-react-lite#readme"
 }
