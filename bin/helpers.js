@@ -2,6 +2,7 @@ const path = require("path");
 const chalk = require("chalk");
 const util = require("util");
 const fs = require("fs");
+const cp = require("child_process");
 const downloadGitRepo = require("download-git-repo");
 const downloadGitRepoAsync = util.promisify(downloadGitRepo);
 
@@ -45,14 +46,22 @@ exports.renameInPackageJson = (projectPath, newFolderName) => {
   );
 };
 
+exports.installDependencies = (projectPath) => {
+  process.stdout.write("Installing dependencies...");
+  const npm = process.platform === "win32" ? "npm.cmd" : "npm";
+  cp.spawnSync(npm, ["install"], {
+    cwd: projectPath,
+  });
+  process.stdout.write(chalk.green("DONE\n"));
+};
+
 exports.logOnFinish = (projectPath, newFolderName) => {
   // notify user that the app is ready
   console.log(`${chalk.bgMagenta(chalk.cyanBright("  SUCCESS!  "))}
   Created project ${chalk.magenta(newFolderName)} at ${chalk.magenta(
     projectPath
   )}
-  Navigate to that directory and run the following commands:
-    1. ${chalk.cyan("npm install")} to install dependencies
-    2. ${chalk.cyan("npm start")}
+  Navigate to that directory and run the following command:
+     ${chalk.cyan("npm start")}
 `);
 };

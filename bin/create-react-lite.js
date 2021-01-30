@@ -8,6 +8,7 @@ const {
   downloadTemplate,
   renameInPackageJson,
   logOnFinish,
+  installDependencies,
 } = require("./helpers");
 
 const templates = {
@@ -16,6 +17,7 @@ const templates = {
 
 const main = async () => {
   console.log(`${chalk.bgMagenta("CREATE REACT LITE")}`);
+  const start = Date.now();
   // Creating Folder
   const newFolderName = args._[0];
   validateFolderName(newFolderName);
@@ -26,7 +28,11 @@ const main = async () => {
   `github:${templateUrl}`; // ?
   await downloadTemplate(templateUrl, projectPath);
   renameInPackageJson(projectPath, newFolderName);
+  installDependencies(projectPath);
   logOnFinish(projectPath, newFolderName);
+  console.log(
+    `Installation finished in: ${(Date.now() - start) / 1000} seconds.`
+  );
 };
 
 main();
