@@ -6,6 +6,8 @@ const {
   getProjectPath,
   createFolder,
   downloadTemplate,
+  renameInPackageJson,
+  logOnFinish,
 } = require("./helpers");
 
 const templates = {
@@ -14,7 +16,6 @@ const templates = {
 
 const main = async () => {
   console.log(`${chalk.bgMagenta("CREATE REACT LITE")}`);
-  args._[0] = "myproject";
   // Creating Folder
   const newFolderName = args._[0];
   validateFolderName(newFolderName);
@@ -24,8 +25,8 @@ const main = async () => {
   const templateUrl = templates["ts"]; // ?
   `github:${templateUrl}`; // ?
   await downloadTemplate(templateUrl, projectPath);
-  // await funcs.updateProjectFiles(projectPath, projectName);
-  // await funcs.notifyUser(projectPath, projectName);
+  renameInPackageJson(projectPath, newFolderName);
+  logOnFinish(projectPath, newFolderName);
 };
 
 main();
