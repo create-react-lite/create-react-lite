@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/create-react-lite/create-react-lite/issues"
   },
-  "homepage": "https://github.com/create-react-lite/create-react-lite#readme"
+  "homepage": "https://github.com/create-react-lite/create-react-lite#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "download-git-repo": "^3.0.2",
+    "yargs": "^16.2.0"
+  }
 }
