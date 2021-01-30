@@ -18,11 +18,11 @@ npm start
 
 ## Features
 
-- [] TypeScript
-- [] CSS Modules
-- [] React-Testing-Library
-- [] File Loader
-- [] Webpack Setup for Prod & Development
+- [x] TypeScript
+- [x] CSS Modules
+- [ ] React-Testing-Library
+- [ ] File Loader
+- [ ] Webpack Setup for Prod & Development
 
 ## No Configuration needed
 
