@@ -2,6 +2,17 @@
 
 Creates a light & opinionated React project which supports TypeScript.
 
+## The problem
+The popular tool `create-react-app` from Facebook, creates a huge project with many features that developers are most likely never going to use.
+Creation of a simple react project, and get going can take minutes (2 - 10 depending on your cpu and connection) with too many unnecessary files, scripts.
+
+## How create-react-lite solves the problem?
+Create-React-Lite, creates a project in seconds (depending on your connection and cpu it may go between 20 to 40 seconds).
+Current template is pretty much opinionated but more templates/setups will be coming.
+
+## Requirement
+NodeJs should be already installed on your PC.
+
 ## Usage
 
 Create your project via:
@@ -27,10 +38,6 @@ npm start
 ## No Configuration needed
 
 You do not have to setup TypeScript, Css Loaders or Babel to get going.
-
-## Requirements
-
-You need at least Node Version 12 installed on your development machine.
 
 ## Typescript
 
