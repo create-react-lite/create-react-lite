@@ -37,6 +37,8 @@ exports.renameInPackageJson = (projectPath, newFolderName) => {
   const newPackageJSON = {
     ...packageJSON,
     name: newFolderName,
+    author: "",
+    description: "",
   };
 
   fs.writeFileSync(
